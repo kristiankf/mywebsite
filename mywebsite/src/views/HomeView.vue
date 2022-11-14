@@ -1,5 +1,7 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <h1 class="bg-slate-50">fuck you</h1>
+  </div>
 </template>
 
 <script>
