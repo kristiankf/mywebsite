@@ -4,7 +4,19 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   content: [],
   theme: {
-    extend: {},
+    
+    extend: {
+      fontFamily: {
+        'fortitle': ['"Archivo Black"', 'cursive'],
+        'forbody': ['Caveat', 'cursive'],
+        'alternate': ['"Noto Sans Mono"', 'monospace']
+      },
+      colors: {
+        'forbg': '#01141d',
+        'highlights': '#144b94',
+        'odd': '#e6d409'
+      },
+    },
   },
   plugins: [],
 }

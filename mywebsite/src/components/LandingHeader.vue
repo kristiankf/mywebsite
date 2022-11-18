@@ -1,3 +1,88 @@
 <template>
-  <div class="tg bg-slate-100">Hello</div>
+  <div class="tg">
+    <header class="header h-screen relative overflow-hidden text-white">
+      <img
+        class="
+          w-full
+          h-full
+          object-cover
+          absolute
+          top-0
+          left-0
+          right-0
+          bottom-0
+          scale-100
+          transition
+          ease-out
+          delay-1000
+          duration-[5000]
+        "
+        id="zoom-image"
+        src="@/assets/images/header-background.jpg"
+        alt=""
+      />
+      <div
+        class="
+          overlay
+          absolute
+          top-0
+          left-0
+          right-0
+          bottom-0
+          backdrop-blur-sm
+          bg-black/50
+        "
+      ></div>
+      <div
+        class="
+          max-w-screen
+          2xl
+          m-auto
+          px-24
+          flex
+          items-center
+          justify-center
+          h-full
+          relative
+          z-10
+        "
+      >
+        <div style="text-align: center">
+          <h1 class="title mb-4 font-fortitle text-6xl">
+            <span class="text-odd">Kris Wale,</span> The Website!
+          </h1>
+          <p>
+            He builds interactive and innovative web apps at affordable prices
+          </p>
+          <a
+            href="#"
+            class="
+              button
+              inline-block
+              py-4
+              px-10
+              bg-white/30
+              rounded-md
+              text-xl
+              transition
+              backdrop-blur-lg
+              font-alternate
+              mt-6
+            "
+            >get Introduced
+            <span
+              class="
+                material-symbols-outlined
+                align-middle
+                text-odd
+                font-semibold
+              "
+            >
+              chevron_right
+            </span></a
+          >
+        </div>
+      </div>
+    </header>
+  </div>
 </template>

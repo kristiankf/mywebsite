@@ -1,16 +1,24 @@
 <template>
-  <router-view />
+  <router-view class="font-forbody text-2xl" />
 </template>
 
 <script>
 export default {
   created() {
-    document.body.style.backgroundColor = "blue";
+    document.body.style.backgroundColor = "#01141d";
   },
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat&family=Josefin+Sans&family=Noto+Sans+Mono:wght@500&display=swap");
+
+:root {
+  --mainbackground: #01141d;
+  --background: #144b94;
+  --oddcolor: #e6d409;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
