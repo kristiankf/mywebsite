@@ -55,6 +55,7 @@
             He builds interactive and innovative web apps at affordable prices
           </p>
           <a
+            @click="$emit('scroll', 'details')"
             href="#"
             class="
               button
@@ -86,3 +87,14 @@
     </header>
   </div>
 </template>
+
+<script>
+// import bodyParser from "body-parser";
+
+export default {
+  name: "LandingHeader",
+  mounted() {
+    document.body.style.overflow = "hidden";
+  },
+};
+</script>
