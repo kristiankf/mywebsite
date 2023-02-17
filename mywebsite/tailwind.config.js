@@ -14,8 +14,11 @@ module.exports = {
       colors: {
         'forbg': '#01141d',
         'highlights': '#144b94',
-        'odd': '#e6d409'
+        'odd': '#e6d409',
+        'skill-bg': "#24292f"
       },
+      backgroundImage: {
+      }
     },
   },
   plugins: [],
