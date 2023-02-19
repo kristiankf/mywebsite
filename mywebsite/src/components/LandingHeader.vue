@@ -1,6 +1,6 @@
 <template>
-  <div class="tg">
-    <header class="header h-screen relative overflow-hidden text-white">
+  <div class="text-white" @load="disableScroll()">
+    <header class="header h-screen relative overflow-hidden">
       <img
         class="
           w-full
@@ -35,10 +35,10 @@
       ></div>
       <div
         class="
-          max-w-screen
+          contain
           2xl
           m-auto
-          px-24
+          lg:px-24
           flex
           items-center
           justify-center
@@ -48,11 +48,21 @@
         "
       >
         <div style="text-align: center">
-          <h1 class="title mb-4 font-fortitle text-6xl">
+          <h1
+            class="
+              title
+              mb-4
+              font-fortitle
+              lg:text-8xl
+              sm:text-6xl
+              text-5xl text-white
+            "
+          >
             <span class="text-odd">Kris Wale,</span> The Website!
           </h1>
-          <p>
-            He builds interactive and innovative web apps at affordable prices
+          <p class="text-white">
+            I build innovative and interactive web apps tailored to your
+            business requirements &#128521;
           </p>
           <a
             @click="$emit('scroll', 'details')"
@@ -69,19 +79,22 @@
               backdrop-blur-lg
               font-alternate
               mt-6
+              text-white
             "
-            >get Introduced
-            <span
+            >getIntroduced
+
+            <use-icon
+              icon="fa-chevron-down"
               class="
                 material-symbols-outlined
                 align-middle
                 text-odd
                 font-semibold
+                text-base
+                animate-bounce
               "
-            >
-              chevron_right
-            </span></a
-          >
+            ></use-icon
+          ></a>
         </div>
       </div>
     </header>
@@ -89,12 +102,17 @@
 </template>
 
 <script>
-// import bodyParser from "body-parser";
-
 export default {
   name: "LandingHeader",
+  methods: {
+    disableScroll() {
+      if (!this.$route.hash) {
+        document.body.style.overflow = "hidden";
+      }
+    },
+  },
   mounted() {
-    document.body.style.overflow = "hidden";
+    this.disableScroll();
   },
 };
 </script>

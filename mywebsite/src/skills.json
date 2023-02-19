@@ -1,0 +1,34 @@
+{
+    "skills": [
+        {
+            "id": 1,
+            "name": "HTML 5",
+            "logo": "html5",
+            "sub_skills": ["HTML Forms", "Semantic HTML"]
+        },
+        {
+            "id": 2,
+            "name": "CSS 3",
+            "logo": "css3",
+            "sub_skills": ["Tailwind CSS", "Responsive Web Designs", "CSS Animations", "SASS"]
+        },
+        {
+            "id": 3,
+            "name": "JavaScript",
+            "logo": "js",
+            "sub_skills": ["DOM Manipulation", "ECMAScript 6", "Asyncronous Javascript", "AJAX - Axios, FetchAPI"]
+        },
+        {
+            "id": 4,
+            "name": "Vue.Js",
+            "logo": "vue",
+            "sub_skills": ["Conditional Rendering", "Vue Router", "Vue State Management", "Component based approach"]
+        },
+         {
+            "id": 5,
+            "name": "GIT",
+            "logo": "git",
+            "sub_skills": ["Code Versioning", "Code Management"]
+        }
+    ]
+}
