@@ -17,7 +17,8 @@ module.exports = {
         'odd': '#e6d409',
         'skill-bg': "#24292f"
       },
-      backgroundImage: {
+      screens: {
+        'xs': '480px'
       }
     },
   },

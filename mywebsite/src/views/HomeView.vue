@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home text-white">
     <landing-header @scroll="scroll"></landing-header>
     <the-details></the-details>
   </div>
