@@ -1,0 +1,60 @@
+<template>
+  <div
+    class="projects border-2 border-slate-700 hover:border-slate-500 rounded-lg bg-skill-bg p-10"
+  >
+    <div class="flex gap-10">
+      <div
+        class="img w-1/3 aspect-square bg-black/30 rounded-lg grid place-content-center"
+      >
+        <img
+          src="@/assets/images/projects/logo.png"
+          alt="lean icon logo"
+          class="w-4/5 aspect-square block m-auto"
+        />
+      </div>
+      <div class="w-2/3">
+        <p class="mb-5">
+          Lean Icon Technology is a Training and Consulting Firm that do
+          sometins bla bla bla using agile methodologies to deliver value to
+          what what
+        </p>
+        <ul class="pl-10 list-disc">
+          <li>I worked on building a responsive site</li>
+          <li>I designed based on UI provided on Figma</li>
+          <li>Tools include vue and tins</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex justify-between mt-5 font-serif text-lg">
+      <div class="">Lean Icon Technology</div>
+      <div class="like">
+        <use-icon
+          icon="fa-heart"
+          class="heart text-base align-middle"
+        ></use-icon>
+        <span class="align-middle"> &nbsp; like</span>
+      </div>
+      <div class="t text-blue-500 hover:text-blue-600">
+        <a href="https://leanicontechnology.co.uk" target="_blank"
+          ><span class="align-middle">Visit site </span>
+          <use-icon
+            icon="fa-external-link"
+            class="align-middle text-base"
+          ></use-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "ProjectsCard",
+};
+</script>
+
+<style scoped>
+.like:active .heart {
+  @apply animate-ping;
+}
+</style>

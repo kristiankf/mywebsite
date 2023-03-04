@@ -19,6 +19,9 @@ module.exports = {
       },
       screens: {
         'xs': '480px'
+      },
+      animation: {
+        'ping-fast': 'ping .3s linear infinite'
       }
     },
   },

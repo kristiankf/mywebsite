@@ -3,7 +3,7 @@
     <the-navigation></the-navigation>
     <div class="contain max-w-6xl">
       <!--about me  -->
-      <section>
+      <section id="about">
         <div class="flex my-32 gap-10 justify-center md:flex-row flex-col">
           <div class="md:w-1/2">
             <h1 class="font-fortitle text-5xl mb-10">
@@ -24,13 +24,7 @@
             <iframe
               src="https://giphy.com/embed/ukMiDlCmdv2og"
               frameBorder="0"
-              class="
-                giphy-embed
-                inline-block
-                m-auto
-                md:w-full md:h-full
-                max-w-md
-              "
+              class="giphy-embed inline-block m-auto md:w-full md:h-full max-w-md"
               allowFullScreen
             ></iframe>
           </div>
@@ -46,6 +40,25 @@
           </div>
         </div>
       </section>
+
+      <!-- My Work -->
+      <section id="work">
+        <div class="my-32">
+          <h2 class="font-fortitle text-5xl mb-10">
+            <span class="text-odd">Projects</span> so far
+          </h2>
+          <p>
+            Explore some of the works that my expertise has brought into
+            reality.
+          </p>
+          <div class="my-10">
+            <projects-card></projects-card>
+          </div>
+          <div class="my-10">
+            <projects-card></projects-card>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -53,9 +66,11 @@
 <script>
 import TheNavigation from "./TheNavigation.vue";
 import SkillCard from "./SkillCard.vue";
+import ProjectsCard from "./ProjectsCard.vue";
 import skills from "@/skills.json";
+
 export default {
-  components: { TheNavigation, SkillCard },
+  components: { TheNavigation, SkillCard, ProjectsCard },
   name: "TheDetails",
   data() {
     return {

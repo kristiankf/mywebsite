@@ -24,4 +24,9 @@ export default {
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 </style>

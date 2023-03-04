@@ -3,7 +3,12 @@
     <div class="flex justify-between items-center contain">
       <!-- LOGO -->
       <div class="d basis-28">
-        <img src="logo-white.png" alt="Kriswale logo" class="w-full" />
+        <img
+          src="logo-white.png"
+          alt="Kriswale logo"
+          class="w-full cursor-pointer"
+          @click="scrollTop"
+        />
       </div>
       <!-- LINKS -->
       <div class="hidden md:block">
@@ -42,5 +47,11 @@
 <script>
 export default {
   name: "TheNavigation",
+  methods: {
+    scrollTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    },
+  },
 };
 </script>
