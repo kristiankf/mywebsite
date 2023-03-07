@@ -2,17 +2,17 @@
   <div
     class="projects border-2 border-slate-700 hover:border-slate-500 rounded-lg bg-skill-bg p-10"
   >
-    <div class="flex gap-10">
+    <div class="md:flex gap-10">
       <div
-        class="img w-1/3 aspect-square bg-black/30 rounded-lg grid place-content-center"
+        class="img md:w-1/3 m-auto h-80 mb-10 md:mb-0 md:aspect-square bg-black/30 rounded-lg grid place-content-center"
       >
         <img
           src="@/assets/images/projects/logo.png"
           alt="lean icon logo"
-          class="w-4/5 aspect-square block m-auto"
+          class="md:w-4/5 xs:h-64 h-52 md:h-auto aspect-square block m-auto"
         />
       </div>
-      <div class="w-2/3">
+      <div class="md:w-2/3">
         <p class="mb-5">
           Lean Icon Technology is a Training and Consulting Firm that do
           sometins bla bla bla using agile methodologies to deliver value to
@@ -25,7 +25,7 @@
         </ul>
       </div>
     </div>
-    <div class="flex justify-between mt-5 font-serif text-lg">
+    <div class="flex justify-between mt-5 font-serif text-lg flex-wrap gap-2">
       <div class="">Lean Icon Technology</div>
       <div class="like">
         <use-icon

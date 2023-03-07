@@ -59,7 +59,57 @@
           </div>
         </div>
       </section>
+
+      <!-- contact me -->
+      <section id="contact">
+        <div class="">
+          <h2 class="font-fortitle text-5xl mb-10">
+            <span class="text-odd">Connect</span> with me
+          </h2>
+          <div
+            class="flex gap-10 items-center justify-center h-[600px] relative top-10"
+          >
+            <div class="w-2/5">
+              <p class="ml-auto text-3xl mb-8">Tell me how I can help you...</p>
+              <div
+                class="flex items-center gap-4 my-5 font-serif text-lg text-[#ccc]"
+              >
+                <div class="">
+                  <use-icon icon="fa-phone" class="text-4xl"></use-icon>
+                </div>
+                <div class="">
+                  Call: <br />
+                  <a
+                    href="tel:+233208232081"
+                    class="hover:text-white transition"
+                    >(+233) 208 232 081</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-4 font-serif text-lg text-[#ccc]"
+              >
+                <div class="">
+                  <use-icon icon="fa-envelope" class="text-4xl"></use-icon>
+                </div>
+                <div class="">
+                  Email: <br />
+                  <a
+                    href="mailto:camoakohene84@gmail.com"
+                    class="hover:text-white transition"
+                    >camoakohene84@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w-3/5 relative self-start">
+              <contact-card class=""></contact-card>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+    <the-footer></the-footer>
   </div>
 </template>
 
@@ -67,10 +117,18 @@
 import TheNavigation from "./TheNavigation.vue";
 import SkillCard from "./SkillCard.vue";
 import ProjectsCard from "./ProjectsCard.vue";
+import ContactCard from "./ContactCard.vue";
+import TheFooter from "./TheFooter.vue";
 import skills from "@/skills.json";
 
 export default {
-  components: { TheNavigation, SkillCard, ProjectsCard },
+  components: {
+    TheNavigation,
+    SkillCard,
+    ProjectsCard,
+    ContactCard,
+    TheFooter,
+  },
   name: "TheDetails",
   data() {
     return {
