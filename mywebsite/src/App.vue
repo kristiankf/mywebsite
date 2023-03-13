@@ -1,5 +1,5 @@
 <template>
-  <router-view class="font-forbody text-2xl" />
+  <router-view class="font-forbody" />
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat&family=Josefin+Sans&family=Noto+Sans+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat&family=Josefin+Sans&family=Noto+Sans+Mono:wght@500&family=Merriweather&display=swap");
 
 :root {
   --mainbackground: #01141d;

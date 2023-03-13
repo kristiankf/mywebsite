@@ -6,7 +6,7 @@
       <section id="about">
         <div class="flex my-32 gap-10 justify-center md:flex-row flex-col">
           <div class="md:w-1/2">
-            <h1 class="font-fortitle text-5xl mb-10">
+            <h1 class="font-fortitle md:text-5xl text-4xl mb-10">
               <span class="text-odd">What</span> I do?
             </h1>
             <p>
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div>
-          <h1 class="font-fortitle text-5xl mb-10">
+          <h1 class="font-fortitle md:text-5xl text-4xl mb-10">
             <span class="text-odd">Skill</span> set
           </h1>
           <div class="skill-cards my-14 flex flex-wrap justify-center gap-5">
@@ -44,7 +44,7 @@
       <!-- My Work -->
       <section id="work">
         <div class="my-32">
-          <h2 class="font-fortitle text-5xl mb-10">
+          <h2 class="font-fortitle md:text-5xl text-4xl mb-10">
             <span class="text-odd">Projects</span> so far
           </h2>
           <p>
@@ -63,14 +63,16 @@
       <!-- contact me -->
       <section id="contact">
         <div class="">
-          <h2 class="font-fortitle text-5xl mb-10">
+          <h2 class="font-fortitle md:text-5xl text-4xl md:mb-10">
             <span class="text-odd">Connect</span> with me
           </h2>
           <div
-            class="flex gap-10 items-center justify-center h-[600px] relative top-10"
+            class="md:flex gap-10 items-center justify-center md:h-[600px] relative top-10"
           >
-            <div class="w-2/5">
-              <p class="ml-auto text-3xl mb-8">Tell me how I can help you...</p>
+            <div class="md:w-2/5">
+              <p class="ml-auto md:text-3xl text-xl mb-8">
+                Tell me how I can help you...
+              </p>
               <div
                 class="flex items-center gap-4 my-5 font-serif text-lg text-[#ccc]"
               >
@@ -102,7 +104,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-3/5 relative self-start">
+            <div class="md:w-3/5 relative self-start md:top-0 top-14">
               <contact-card class=""></contact-card>
             </div>
           </div>

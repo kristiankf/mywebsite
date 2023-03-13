@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-32 pt-72 bg-zinc-900">
+  <div class="pb-32 md:pt-72 pt-48 bg-zinc-900">
     <div class="contain flex justify-center items-center">
       <div>
         <p class="font-fortitle text-center text-odd text-4xl">Kris Wale</p>

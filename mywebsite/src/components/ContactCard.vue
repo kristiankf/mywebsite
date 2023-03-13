@@ -1,6 +1,8 @@
 <template>
   <div>
-    <form class="rounded-lg bg-skill-bg px-14 py-20 absolute top-0 w-full">
+    <form
+      class="rounded-lg bg-skill-bg md:px-14 md:py-20 px-6 py-14 md:absolute top-0 w-full"
+    >
       <p class="mb-14 font-alternate text-3xl font-bold">Send me a message</p>
       <div class="relative my-14">
         <input
@@ -23,7 +25,7 @@
           name="email"
           id="email"
           v-model="email"
-          class="w-full bg-transparent border-b-2 border-slate-700 hover:border-slate-500 transition focus:border-b-odd p-2 outline-none focus:bg-slate-700"
+          class="w-full bg-transparent border-b-2 border-slate-700 hover:border-slate-500 transition focus:border-b-odd p-2 outline-none focus-visible:bg-slate-700"
         />
         <label
           for="email"
@@ -97,8 +99,9 @@ label {
 }
 input:focus + label,
 textarea:focus + label,
+select:focus + label,
 .value {
-  font-size: 18px;
+  font-size: 12px;
   /* transform: translateY(-100%); */
   top: -30px;
   color: white;

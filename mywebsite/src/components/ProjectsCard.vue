@@ -1,18 +1,18 @@
 <template>
   <div
-    class="projects border-2 border-slate-700 hover:border-slate-500 rounded-lg bg-skill-bg p-10"
+    class="projects border-2 border-slate-700 hover:border-slate-500 rounded-lg bg-skill-bg xs:p-10 p-5 min-h-[350px]"
   >
     <div class="md:flex gap-10">
       <div
-        class="img md:w-1/3 m-auto h-80 mb-10 md:mb-0 md:aspect-square bg-black/30 rounded-lg grid place-content-center"
+        class="img md:w-1/4 mb-10 md:mb-0 md:aspect-square bg-black/30 rounded-lg grid place-content-center md:p-0 p-5"
       >
         <img
           src="@/assets/images/projects/logo.png"
           alt="lean icon logo"
-          class="md:w-4/5 xs:h-64 h-52 md:h-auto aspect-square block m-auto"
+          class="md:w-4/5 xs:h-52 h-40 md:h-auto aspect-square block m-auto"
         />
       </div>
-      <div class="md:w-2/3">
+      <div class="md:w-3/4">
         <p class="mb-5">
           Lean Icon Technology is a Training and Consulting Firm that do
           sometins bla bla bla using agile methodologies to deliver value to

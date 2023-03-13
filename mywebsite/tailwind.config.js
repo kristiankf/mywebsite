@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'fortitle': ['"Archivo Black"', 'cursive'],
-        'forbody': ['Caveat', 'cursive'],
+        'forbody': ['Merriweather', 'serif'],
         'alternate': ['"Noto Sans Mono"', 'monospace']
       },
       colors: {

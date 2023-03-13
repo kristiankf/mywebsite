@@ -2,7 +2,7 @@
   <nav class="nav py-2 sticky top-0 border-b bg-forbg z-10">
     <div class="flex justify-between items-center contain">
       <!-- LOGO -->
-      <div class="d basis-28">
+      <div class="md:basis-28 basis-20">
         <img
           src="logo-white.png"
           alt="Kriswale logo"
@@ -28,17 +28,17 @@
       </div>
       <!-- ICON LINKS -->
       <div class="hidden md:block">
-        <a href="" class="px-1" title="toggle theme"
+        <a href="" class="mx-1 text-2xl" title="toggle theme"
           ><use-icon icon="fa-solid fa-circle-half-stroke"
         /></a>
-        <a href="" class="px-1" title="settings"
+        <a href="" class="mx-1 text-2xl" title="settings"
           ><use-icon icon="fa-solid fa-gear"
         /></a>
       </div>
 
       <!-- Hamburgar for mobile navigation -->
       <div class="md:hidden">
-        <use-icon icon="fa-solid fa-bars"></use-icon>
+        <use-icon icon="fa-solid fa-bars" class="text-2xl"></use-icon>
       </div>
     </div>
   </nav>
