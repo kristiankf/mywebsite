@@ -3,7 +3,9 @@
     <form
       class="rounded-lg bg-skill-bg md:px-14 md:py-20 px-6 py-14 md:absolute top-0 w-full"
     >
-      <p class="mb-14 font-alternate text-3xl font-bold">Send me a message</p>
+      <p class="mb-14 font-alternate md:text-3xl text-2xl font-bold">
+        Send me a message
+      </p>
       <div class="relative my-14">
         <input
           type="text"

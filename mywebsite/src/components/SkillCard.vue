@@ -1,6 +1,6 @@
 <template>
   <div
-    class="skill-card md:w-[350px] xs:w-[180px] w-[140px] border-2 border-slate-700 hover:border-slate-500 xs:p-10 p-5 rounded-lg backdrop-blur-lg bg-skill-bg h-full"
+    class="skill-card md:w-[350px] xs:w-[180px] w-[140px] border border-slate-700 hover:border-slate-500 xs:p-10 p-5 rounded-lg backdrop-blur-lg bg-skill-bg h-full text-[#ddd] hover:text-white transition"
   >
     <div class="logo xs:w-20 w-14 md:m-0 m-auto">
       <img
@@ -34,3 +34,6 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+</style>

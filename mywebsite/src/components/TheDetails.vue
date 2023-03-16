@@ -9,7 +9,7 @@
             <h1 class="font-fortitle md:text-5xl text-4xl mb-10">
               <span class="text-odd">What</span> I do?
             </h1>
-            <p>
+            <p class="text-[#ddd]">
               I am a talented developer who creates visually appealing,
               responsive and intuitive web applications. Using modern web
               technologies such as JavaScript, Vue.js, TailwindCSS etc... I am
@@ -47,15 +47,47 @@
           <h2 class="font-fortitle md:text-5xl text-4xl mb-10">
             <span class="text-odd">Projects</span> so far
           </h2>
-          <p>
+          <p class="text-[#ddd]">
             Explore some of the works that my expertise has brought into
             reality.
           </p>
           <div class="my-10">
-            <projects-card></projects-card>
+            <projects-card
+              name="Lean Icon Technology"
+              link="https://leanicontechnology.co.uk"
+              logoimg="logo"
+            >
+              <template #about>
+                Lean Icon Technology is a Training and Consulting Firm that
+                improves your organizations performance and efficiency through
+                Enterprise Agile Transformation with SAFe®, OKRs Implementation
+                and Microsoft Adaptation.
+              </template>
+              <template #list1>I worked on building a responsive site</template>
+              <template #list2
+                >I designed based on UI provided on Figma</template
+              >
+              <template #list3>Built with Vue.js</template>
+            </projects-card>
           </div>
           <div class="my-10">
-            <projects-card></projects-card>
+            <projects-card
+              name="BRET"
+              link="https://bret.preceptleadership.com/"
+              logoimg="precept-logo"
+            >
+              <template #about
+                >This platform identifies your key and pre-dominant drivers as
+                enunciated by the 4 Drive Theory of Motivation. This is
+                indicative of your Natural or Instinctive behavior &
+                response.</template
+              >
+              <template #list1>I worked on building a responsive site</template>
+              <template #list2
+                >I designed based on UI provided on Figma</template
+              >
+              <template #list3>Built with Vue.js and TailwindCSS</template>
+            </projects-card>
           </div>
         </div>
       </section>
