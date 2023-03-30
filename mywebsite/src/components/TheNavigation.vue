@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav py-2 sticky top-0 border-b bg-forbg z-10">
+  <nav class="nav py-2 sticky top-0 border-b z-10">
     <div class="flex justify-between items-center contain">
       <!-- LOGO -->
       <div class="md:basis-28 basis-20">
@@ -55,3 +55,17 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.nav {
+  background: hsl(223, 39%, 16%);
+  background-image: conic-gradient(
+    from 45deg at 50% 50%,
+    blue,
+    purple,
+    purple,
+    blue
+  );
+  background-blend-mode: multiply;
+}
+</style>

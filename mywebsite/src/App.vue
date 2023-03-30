@@ -1,5 +1,5 @@
 <template>
-  <router-view class="font-forbody md:text-lg" />
+  <router-view class="font-forbody lg" />
 </template>
 
 <script>

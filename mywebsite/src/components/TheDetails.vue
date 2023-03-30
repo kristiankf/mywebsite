@@ -1,5 +1,5 @@
 <template>
-  <div id="details">
+  <div id="details" class="details">
     <the-navigation></the-navigation>
     <div class="contain max-w-6xl">
       <!--about me  -->
@@ -174,3 +174,17 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.details {
+  background: hsl(224, 32%, 12%);
+  background-image: conic-gradient(
+    from 0deg at 50% 50%,
+    blue,
+    purple,
+    purple,
+    blue
+  );
+  background-blend-mode: multiply;
+}
+</style>

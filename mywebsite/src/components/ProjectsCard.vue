@@ -1,6 +1,9 @@
 <template>
   <div
-    class="projects border-2 border-slate-700 hover:border-slate-500 rounded-lg bg-skill-bg xs:p-10 p-5 min-h-[350px] text-[#ddd] hover:text-white transition"
+    id="project-card"
+    class="projects border border-slate-700 hover:border-slate-500 rounded-lg bg-skill-bg xs:p-10 p-5 min-h-[350px] text-[#ddd] hover:text-white"
+    @mousemove="rotateElement($event)"
+    @mouseleave="resetRotation"
   >
     <div class="md:flex gap-10">
       <div
@@ -49,11 +52,51 @@
 export default {
   name: "ProjectsCard",
   props: ["logoimg", "name", "link"],
+  methods: {
+    rotateElement(event) {
+      const element = this.$el;
+      const x = event.clientX;
+      const y = event.clientY;
+      console.log(x, y);
+      console.log(element);
+
+      // find the middle
+      const middleX = window.innerWidth / 2;
+      const middleY = window.innerHeight / 2;
+      console.log(middleX, middleY);
+
+      // get offset from middle as a percentage
+      // and tone it down a little
+      const offsetX = ((x - middleX) / middleX) * 15;
+      const offsetY = ((y - middleY) / middleY) * 10;
+      // console.log(element);
+
+      // set rotation
+      // setTimeout(() => {
+      element.style.transitionDuration = "0.1s";
+      // }, 300);
+      element.style.setProperty("--rotateX", -1 * offsetX + "deg");
+      element.style.setProperty("--rotateY", offsetY + "deg");
+    },
+
+    resetRotation() {
+      const element = this.$el;
+      element.style.setProperty("--rotateX", 0 + "deg");
+      element.style.setProperty("--rotateY", 0 + "deg");
+      element.style.transitionDuration = "0.3s";
+    },
+  },
 };
 </script>
 
 <style scoped>
 .like:active .heart {
   @apply animate-ping;
+}
+
+.projects {
+  transform-style: preserve-3d;
+  transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+  transition: all 0.3s;
 }
 </style>
