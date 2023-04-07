@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="lg:flex lg:justify-center">
     <form
-      class="rounded-lg bg-skill-bg md:px-14 md:py-20 px-6 py-14 md:absolute top-0 w-full"
+      class="rounded-lg bg-skill-bg md:px-14 md:py-16 px-6 py-14 md:absolute top-0 lg:w-10/12 w-full"
     >
-      <p class="mb-14 font-alternate md:text-3xl text-2xl font-bold">
+      <p class="mb-10 font-alternate md:text-3xl text-2xl font-bold">
         Send me a message
       </p>
-      <div class="relative my-14">
+      <div class="relative my-10">
         <input
           type="text"
           name="fullname"
@@ -21,7 +21,7 @@
           >Full Name</label
         >
       </div>
-      <div class="relative my-14">
+      <div class="relative my-10">
         <input
           type="email"
           name="email"
@@ -36,7 +36,7 @@
           >Email</label
         >
       </div>
-      <div class="relative my-14">
+      <div class="relative my-10">
         <select
           name="subject"
           id="subject"
@@ -54,7 +54,7 @@
           >Subject</label
         >
       </div>
-      <div class="relative my-14">
+      <div class="relative my-10">
         <textarea
           name="message"
           id="message"

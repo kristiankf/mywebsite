@@ -1,11 +1,41 @@
 <template>
   <div id="details" class="details">
-    <the-navigation></the-navigation>
+    <the-navigation
+      v-motion
+      :initial="{ opacity: 0 }"
+      :visibleOnce="{
+        opacity: 1,
+        transition: {
+          opacity: {
+            duration: 800,
+            delay: 1000,
+          },
+        },
+      }"
+    ></the-navigation>
     <div class="contain max-w-6xl">
       <!--about me  -->
       <section id="about">
         <div class="flex my-32 gap-10 justify-center md:flex-row flex-col">
-          <div class="md:w-1/2">
+          <div
+            class="md:w-1/2"
+            v-motion
+            :initial="{ opacity: 0, y: 100 }"
+            :visibleOnce="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                y: {
+                  duration: 800,
+                  delay: 300,
+                },
+                opacity: {
+                  duration: 800,
+                  delay: 300,
+                },
+              },
+            }"
+          >
             <h1 class="font-fortitle md:text-5xl text-4xl mb-10">
               <span class="text-odd">What</span> I do?
             </h1>
@@ -20,7 +50,25 @@
               finding solutions in our fast-paced environment.
             </p>
           </div>
-          <div class="md:w-1/2 text-center">
+          <div
+            class="md:w-1/2 text-center"
+            v-motion
+            :initial="{ opacity: 0, x: 100 }"
+            :visibleOnce="{
+              x: 0,
+              opacity: 1,
+              transition: {
+                x: {
+                  duration: 800,
+                  delay: 700,
+                },
+                opacity: {
+                  duration: 800,
+                  delay: 700,
+                },
+              },
+            }"
+          >
             <iframe
               src="https://giphy.com/embed/ukMiDlCmdv2og"
               frameBorder="0"
@@ -30,11 +78,48 @@
           </div>
         </div>
         <div>
-          <h1 class="font-fortitle md:text-5xl text-4xl mb-10">
+          <h1
+            class="font-fortitle md:text-5xl text-4xl mb-10"
+            v-motion
+            :initial="{ opacity: 0, y: 100 }"
+            :visibleOnce="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                y: {
+                  duration: 800,
+                  delay: 400,
+                },
+                opacity: {
+                  duration: 800,
+                  delay: 400,
+                },
+              },
+            }"
+          >
             <span class="text-odd">Skill</span> set
           </h1>
           <div class="skill-cards my-14 flex flex-wrap justify-center gap-5">
-            <div v-for="skill in skills" :key="skill.id">
+            <div
+              v-for="skill in skills"
+              :key="skill.id"
+              v-motion
+              :initial="{ opacity: 0, y: 100 }"
+              :visibleOnce="{
+                y: 0,
+                opacity: 1,
+                transition: {
+                  y: {
+                    duration: 800,
+                    delay: 400,
+                  },
+                  opacity: {
+                    duration: 800,
+                    delay: 400,
+                  },
+                },
+              }"
+            >
               <skill-card :skill="skill"></skill-card>
             </div>
           </div>
@@ -44,14 +129,68 @@
       <!-- My Work -->
       <section id="work">
         <div class="my-32">
-          <h2 class="font-fortitle md:text-5xl text-4xl mb-10">
+          <h2
+            class="font-fortitle md:text-5xl text-4xl mb-10"
+            v-motion
+            :initial="{ opacity: 0, y: 100 }"
+            :visibleOnce="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                y: {
+                  duration: 800,
+                  delay: 400,
+                },
+                opacity: {
+                  duration: 800,
+                  delay: 400,
+                },
+              },
+            }"
+          >
             <span class="text-odd">Projects</span> so far
           </h2>
-          <p class="text-[#ddd]">
+          <p
+            class="text-[#ddd]"
+            v-motion
+            :initial="{ opacity: 0, y: 100 }"
+            :visibleOnce="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                y: {
+                  duration: 800,
+                  delay: 400,
+                },
+                opacity: {
+                  duration: 800,
+                  delay: 400,
+                },
+              },
+            }"
+          >
             Explore some of the works that my expertise has brought into
             reality.
           </p>
-          <div class="my-10">
+          <div
+            class="my-10"
+            v-motion
+            :initial="{ opacity: 0, y: 100 }"
+            :visibleOnce="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                y: {
+                  duration: 800,
+                  delay: 400,
+                },
+                opacity: {
+                  duration: 800,
+                  delay: 400,
+                },
+              },
+            }"
+          >
             <projects-card
               name="Lean Icon Technology"
               link="https://leanicontechnology.co.uk"
@@ -70,7 +209,25 @@
               <template #list3>Built with Vue.js</template>
             </projects-card>
           </div>
-          <div class="my-10">
+          <div
+            class="my-10"
+            v-motion
+            :initial="{ opacity: 0, y: 100 }"
+            :visibleOnce="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                y: {
+                  duration: 800,
+                  delay: 400,
+                },
+                opacity: {
+                  duration: 800,
+                  delay: 400,
+                },
+              },
+            }"
+          >
             <projects-card
               name="BRET"
               link="https://bret.preceptleadership.com/"
@@ -95,13 +252,49 @@
       <!-- contact me -->
       <section id="contact">
         <div class="">
-          <h2 class="font-fortitle md:text-5xl text-4xl md:mb-10">
+          <h2
+            class="font-fortitle md:text-5xl text-4xl md:mb-1"
+            v-motion
+            :initial="{ opacity: 0, y: 100 }"
+            :visibleOnce="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                y: {
+                  duration: 800,
+                  delay: 400,
+                },
+                opacity: {
+                  duration: 800,
+                  delay: 400,
+                },
+              },
+            }"
+          >
             <span class="text-odd">Connect</span> with me
           </h2>
           <div
-            class="md:flex gap-10 items-center justify-center md:h-[600px] relative top-10"
+            class="md:flex gap-10 items-center justify-center md:h-[600px] relative top-16"
           >
-            <div class="md:w-2/5">
+            <div
+              class="md:w-2/5"
+              v-motion
+              :initial="{ opacity: 0, x: -150 }"
+              :visibleOnce="{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  x: {
+                    duration: 800,
+                    delay: 400,
+                  },
+                  opacity: {
+                    duration: 800,
+                    delay: 400,
+                  },
+                },
+              }"
+            >
               <p class="ml-auto md:text-3xl text-xl mb-8">
                 Tell me how I can help you...
               </p>
@@ -136,7 +329,25 @@
                 </div>
               </div>
             </div>
-            <div class="md:w-3/5 relative self-start md:top-0 top-14">
+            <div
+              class="md:w-3/5 relative self-start md:top-0 top-14 mx-auto"
+              v-motion
+              :initial="{ opacity: 0, x: 150 }"
+              :visibleOnce="{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  x: {
+                    duration: 800,
+                    delay: 400,
+                  },
+                  opacity: {
+                    duration: 800,
+                    delay: 400,
+                  },
+                },
+              }"
+            >
               <contact-card class=""></contact-card>
             </div>
           </div>

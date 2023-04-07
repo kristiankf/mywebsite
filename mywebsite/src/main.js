@@ -6,6 +6,9 @@ import store from './store'
 // tailwind 
 import './assets/tailwind.css'
 
+// Vueuse / motion
+import { MotionPlugin } from '@vueuse/motion'
+
 // font awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -27,4 +30,4 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 library.add(faGear, faCircleHalfStroke, faChevronDown, faBars, faHeart, faTwitter, faLinkedin, faGithub, faExternalLink, faEnvelope, faPhone, faPaperPlane)
 
 
-createApp(App).use(store).use(router).component('use-icon', FontAwesomeIcon).mount('#app')
+createApp(App).use(store).use(router).use(MotionPlugin).component('use-icon', FontAwesomeIcon).mount('#app')
